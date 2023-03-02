@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Marketplace</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="https://img.icons8.com/external-others-sbts2018/344/external-marketplace-social-media-others-sbts2018.png">
+        </div>
+        <div class="title">
+            <h1>Marketplace</h1>
+        </div>
+        <div class="searchbox">
+            <input type="text" id="search" placeholder="Search"><label for="search">
+                <img src="https://img.icons8.com/ios-glyphs/344/google-web-search.png">
+            </label>
+        </div>
+        <div class="cart">
+            <img src="https://img.icons8.com/color/344/shopping-cart--v1.png">
+        </div>
+    </div>
+    <div class="center">
+        <button id="show-login">Login</button>
+    </div>
+
+    <form action="/sign_in" method="POST">
+        <div class="popup">
+            <div class="close-btn">&times;</div>
+            <div class="form">
+                <h1>Log In</h1>
+                <div class="form-element">
+                    <label for="email">E-mail</label>
+                    <input type="text" name="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-element">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password">
+                </div>
+                <div class="form-element">
+                    <a href="#" class="forgot">Forgot Password?</a>
+            </div>
+                <div class="form-element">
+                    <label for="rememberme" class="remm">Remember Me</label>
+                    <input type="checkbox" id="rememberme">
+                </div>
+                
+                <div class="form-element">
+                    <button id="login" class="button">Log in</button>
+                </div>
+                <div class="form-element">
+                    <button id="loginwithgoogle" class="button">
+                        <img src="https://s.yimg.com/fz/api/res/1.2/I2ucT7v2aEn9pInvuzBnPQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/    https://s.yimg.com/zb/imgv1/e76fa261-e45b-3514-872d-e8fa3a2473e5/t_500x300">
+                        Log in with Google</button>
+                </div>
+                <div class="form-element">
+                    <button id="loginwithfacebook" class="button">
+                        <img src="https://s.yimg.com/fz/api/res/1.2/SBnTtvtkyJXCCDtTnKcQUw--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/    https://s.yimg.com/zb/imgv1/c165dc31-f7f7-35c4-8df4-cdd842798724/t_500x300">
+                        Log in with Facebook</button>
+                </div>
+                <div class="form-element">
+                    <div class="account">Don't have an account?</div>
+                    <a href="#" class="register">Register Now!</a>
+                </div>
+            </div>
+        </div>
+    </form>  
+
+    <form action="/sign_up" method="POST">
+    <div class="popup1">
+            <div class="close-btn1">&times;</div>
+            <div class="form1">
+                <h1>Register</h1>
+                <div class="form-element1">
+                    <label for="name">Name</label>
+                    <input type="text" name="name1" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-element1">
+                    <label for="email1">E-mail</label>
+                    <input type="text" name="email1" id="email1" placeholder="Enter your email">
+                </div>
+                <div class="form-element1">
+                    <label for="password1">Password</label>
+                    <input type="password" name="password1" id="password1" placeholder="Enter your password">
+                    <div class="text">Passwords must contain at least eight characters, including at least 1 letter and 1 number.</div>
+                </div>
+                <div class="form-element1">
+                    <label for="confirmpassword">Confirm Password</label>
+                    <input type="password" id="confirmpassword" placeholder="Confirm your password">
+                </div>
+                <div class="form-element1">
+                    <button id="signup" class="button1">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </form>  
+
+
+    <script src="app.js" defer></script>
+    
+</body>
+</html>
